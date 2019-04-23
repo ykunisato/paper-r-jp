@@ -74,7 +74,6 @@ tidybayes \
 viridis \
 psycho
 
-
 # Install Shiny server
 RUN export ADD=shiny && bash /etc/cont-init.d/add
 

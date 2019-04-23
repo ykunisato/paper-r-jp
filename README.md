@@ -2,12 +2,11 @@
 
 This Dockerfile was developed for the Japanesese R users (So, it contains settings of Japanese environment). English version of this dockerfile is [here](https://cloud.docker.com/repository/docker/ykunisato/paper-r).
 
-これは，RstudioでR Markdownを用いて論文執筆を行う際に便利なパッケージやアドインを含めたDockerファイルのリポジトリです。このDockerファイルにより，[アカデミアのためのRSTUDIO](https://ytake2.github.io/create.manuscript/RStudio_for_Academia.html)にて紹介されているパッケージは大体用意できます。
+これは，RstudioでR Markdownを用いて論文執筆を行う際に便利なパッケージやアドインを含めたDockerファイルのリポジトリです。このDockerファイルでは，[アカデミアのためのRSTUDIO](https://ytake2.github.io/create.manuscript/RStudio_for_Academia.html)にて紹介されているパッケージは大体用意できます。
 
 本Dockerファイルは，rocker/verseをベースにし，antoine-sachet/rocker-MLに記載されている方法を使ってrstanをインストールし，いくつかR Markdown関連のパッケージを追加しています。また，日本語環境の設定は，[rocker-jp/verse](https://github.com/rocker-jp/verse)を参考にしています。なお，本Dockerファイルのイメージは2GB程度になります。
 
 作成者は専修大学人間科学部心理学科の国里愛彦です (ykunisato@psy.senshu-u.ac.jp)。
-
 
 ## 使用法
 
@@ -26,8 +25,6 @@ docker run -e PASSWORD=パスワード -p 8787:8787 -v ~:/home/rstudio -d --name
 4.ブラウザを開いて，urlバー（アドレスバー）に，http://localhost:8787/ とタイプする
 
 5.ブラウザ上にRstudioが出てくるので，IDにrstudio，パスに上記で設定したパスワードをいれる。
-
-
 
 ## 事前にインストールされている追加のRパッケージ
 
