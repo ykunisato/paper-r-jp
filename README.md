@@ -4,7 +4,7 @@ This Dockerfile was developed for the Japanesese R users (So, it contains settin
 
 これは，RstudioでR Markdownを用いて論文執筆を行う際に便利なパッケージやアドインを含めたDockerファイルのリポジトリです。このDockerファイルにより，[アカデミアのためのRSTUDIO](https://ytake2.github.io/create.manuscript/RStudio_for_Academia.html)にて紹介されているパッケージは大体用意できます。
 
-本Dockerファイルは，rocker/verseをベースにし，antoine-sachet/rocker-MLに記載されている方法を使ってrstanをインストールし，いくつかR Markdown関連のパッケージを追加しています。なお，本Dockerファイルのイメージは2GB程度になります。
+本Dockerファイルは，rocker/verseをベースにし，antoine-sachet/rocker-MLに記載されている方法を使ってrstanをインストールし，いくつかR Markdown関連のパッケージを追加しています。また，日本語環境の設定は，[rocker-jp/verse](https://github.com/rocker-jp/verse)を参考にしています。なお，本Dockerファイルのイメージは2GB程度になります。
 
 作成者は専修大学人間科学部心理学科の国里愛彦です (ykunisato@psy.senshu-u.ac.jp)。
 
