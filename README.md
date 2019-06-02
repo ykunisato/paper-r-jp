@@ -26,6 +26,17 @@ docker run -e PASSWORD=パスワード -p 8787:8787 -v ~:/home/rstudio -d --name
 
 5.ブラウザ上にRstudioが出てくるので，IDにrstudio，パスに上記で設定したパスワードをいれる。
 
+## Docker間の依存関係について
+
+国里(ykunisato)が管理しているDockerコンテナとその依存関係は以下になります。
+
+- [ykunisato/paper-r](https://hub.docker.com/r/ykunisato/paper-r) : rocker/verseをベースに心理学系使いそうなRパッケージを入れたコンテナ
+- [ykunisato/paper-r-jp](https://hub.docker.com/r/ykunisato/paper-r-jp) : ykunisato/paper-rをベースに日本語環境化したコンテナ（本コンテナ）
+- [ykunisato/cog-model-r](https://hub.docker.com/r/ykunisato/cog-model-r) : ykunisato/paper-rをベースに認知モデリングで使用するパッケージを追加したコンテナ
+- [ykunisato/psynet-r](https://hub.docker.com/r/ykunisato/psynet-r) : ykunisato/paper-rをベースに心理学的ネットワークモデリングで使用するパッケージを追加したコンテナ
+- [ykunisato/netmeta-r](https://hub.docker.com/r/ykunisato/netmeta-r) : ykunisato/paper-rをベースにネットワークメタ分析で使用するパッケージを追加したコンテナ
+
+
 ## 事前にインストールされている追加のRパッケージ
 ### 論文のテンプレート系パッケージ
 
@@ -59,6 +70,12 @@ docker run -e PASSWORD=パスワード -p 8787:8787 -v ~:/home/rstudio -d --name
 - citr                  :               'RStudio' Add-in to Insert Markdown Citations (BibTeX)
 - gramr                :                The Grammar of Grammar
 - wordcountaddin       :                Word counts and readability statistics in R markdown documents
+
+### Google Compute Engine関係
+
+- googleComputeEngineR : R Interface with Google Compute Engine
+- googleCloudStorageR :  Interface with Google Cloud Storage API
+- future : Unified Parallel and Distributed Processing in R for Everyone
 
 ### その他
 
