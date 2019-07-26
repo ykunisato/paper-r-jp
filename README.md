@@ -8,6 +8,8 @@ This Dockerfile was developed for the Japanesese R users (So, it contains settin
 
 作成者は専修大学人間科学部心理学科の国里愛彦です (ykunisato@psy.senshu-u.ac.jp)。エラーや追加してほしいパッケージなどがありましたら，気軽にご連絡ください。
 
+Keywords: 心理学, 認知科学, 分析・執筆，rstudio, rstan, rmarkdown
+
 ## 使用法
 
 Docker Desktopがインストールされていて，ある程度の通信速度があれば，数分で使用可能です。
