@@ -30,13 +30,13 @@ docker run -e PASSWORD=パスワード -p 8787:8787 -v $PWD:/home/rstudio -d --n
 
 ## Docker間の依存関係について
 
-国里(ykunisato)が管理しているDockerコンテナとその依存関係は以下になります。
+国里(ykunisato)が管理しているRStudio用Dockerコンテナとその依存関係は以下になります。
 
-- [ykunisato/paper-r](https://hub.docker.com/r/ykunisato/paper-r) : rocker/verseをベースに心理学系使いそうなRパッケージを入れたコンテナ
+- [ykunisato/paper-r](https://hub.docker.com/r/ykunisato/paper-r) : 心理学系使いそうなRパッケージを入れたコンテナ（rocker/verseをベースに作成）
 - [ykunisato/paper-r-jp](https://hub.docker.com/r/ykunisato/paper-r-jp) : ykunisato/paper-rをベースに日本語環境化したコンテナ（本コンテナ）
-- [ykunisato/cog-model-r](https://hub.docker.com/r/ykunisato/cog-model-r) : ykunisato/paper-rをベースに認知モデリングで使用するパッケージを追加したコンテナ
-- [ykunisato/psynet-r](https://hub.docker.com/r/ykunisato/psynet-r) : ykunisato/paper-rをベースに心理学的ネットワークモデリングで使用するパッケージを追加したコンテナ
-- [ykunisato/netmeta-r](https://hub.docker.com/r/ykunisato/netmeta-r) : ykunisato/paper-rをベースにネットワークメタ分析で使用するパッケージを追加したコンテナ
+- [ykunisato/ccp-lab-r](https://hub.docker.com/r/ykunisato/ccp-lab-r) : ykunisato/paper-rをベースに認知モデリング,心理学的ネットワーク分析，ネットワークメタ分析で使用するパッケージを追加したコンテナ
+- [ykunisato/ccp-lab-r-jp](https://hub.docker.com/r/ykunisato/ccp-lab-rjp) : ykunisato/ccp-lab-rをベースに日本語環境化したコンテナ
+
 
 
 ## 事前にインストールされている追加のRパッケージ
